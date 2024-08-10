@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect, useMemo } from 'react';
 
-const UsersContext = createContext({
-  user: null,
+export const UsersContext = createContext({
+  users: null,
   setUser: null,
 });
 

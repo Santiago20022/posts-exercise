@@ -6,7 +6,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from './components/Home';
 import Posts from './pages/Posts';
 import UserProvider from './context/UserContext';
 
@@ -14,10 +13,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Posts />
-  },
-  {
-    path:"/home",
-    element: <Home/>
   }
 ]);
 
