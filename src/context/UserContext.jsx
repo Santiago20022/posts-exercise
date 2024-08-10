@@ -2,7 +2,7 @@ import { createContext, useState, useEffect, useMemo } from 'react';
 
 export const UsersContext = createContext({
   users: null,
-  setUser: null,
+  setUsers: null,
 });
 
 export default function UserProvider( { children } ){
