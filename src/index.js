@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Posts from './pages/Posts';
-import UserProvider from './context/UserContext';
+import UserProvider from './context/UsersContext';
 
 const router = createBrowserRouter([
   {

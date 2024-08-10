@@ -5,7 +5,7 @@ export const UsersContext = createContext({
   setUsers: null,
 });
 
-export default function UserProvider( { children } ){
+export default function UsersProvider( { children } ){
   const [users, setUsers] = useState([]);
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
