@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Posts from './pages/Posts';
-import UserProvider from './context/UsersContext';
+import UsersProvider from './context/UsersContext';
 
 const router = createBrowserRouter([
   {
@@ -19,9 +19,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <UserProvider>
+   <UsersProvider>
     <RouterProvider router={router} />
-   </UserProvider>
+   </UsersProvider>
   </React.StrictMode>
 );
 
