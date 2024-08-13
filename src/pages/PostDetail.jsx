@@ -11,17 +11,15 @@ const PostDetail = () => {
       .then(postData => setPost(postData));
   }, [id]);
 
-
-
   return (
-    <div >
+    <>
       {post && (
         <>
           <h1>{post.title}</h1>
           <p>{post.body}</p>
         </>
       )}
-    </div>
+    </>
   )
 }
 

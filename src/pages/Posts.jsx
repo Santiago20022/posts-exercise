@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import Post from "../components/Post";
-import { useNavigate } from "react-router-dom";
 
 function Posts(){
   const [posts, setPosts] = useState(null);
-  const navigate = useNavigate
-
+  
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
@@ -23,5 +21,3 @@ function Posts(){
   )
 }
 export default Posts;
-
-
