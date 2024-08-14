@@ -3,7 +3,7 @@ import Post from "../components/Post";
 
 function Posts(){
   const [posts, setPosts] = useState(null);
-
+  
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
@@ -21,5 +21,3 @@ function Posts(){
   )
 }
 export default Posts;
-
-

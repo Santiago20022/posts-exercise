@@ -8,11 +8,16 @@ import {
 } from "react-router-dom";
 import Posts from './pages/Posts';
 import UsersProvider from './context/UsersContext';
+import PostDetail from './pages/PostDetail';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Posts />
+  },
+  {
+    path: "/posts/:id",
+    element: <PostDetail />,
   }
 ]);
 
