@@ -10,7 +10,7 @@ const PostDetail = () => {
  
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-      .then(response => {response.json()} )
+      .then(response => response.json() )
       .then(postData => {
         if (postData && Object.keys(postData).length > 0) {
           setPost(postData);
