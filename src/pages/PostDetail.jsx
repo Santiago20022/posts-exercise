@@ -6,7 +6,7 @@ const PostDetail = () => {
   const {id} = useParams();
   const [post, setPost] = useState(null);
   const [comments, setComments] = useState([]);
-  const [postNotFound, setPostNotFound] = useState(true);
+  const [postNotFound, setPostNotFound] = useState(false);
  
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
@@ -14,10 +14,10 @@ const PostDetail = () => {
       .then(postData => {
         if (postData && Object.keys(postData).length > 0) {
           setPost(postData);
-          setPostNotFound(false);
+          setPostNotFound(true);
         } else {
           setPost(null);
-          setPostNotFound(true);
+          setPostNotFound(false);
         }
       });
     
