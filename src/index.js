@@ -9,6 +9,7 @@ import {
 import Posts from './pages/Posts';
 import UsersProvider from './context/UsersContext';
 import PostDetail from './pages/PostDetail';
+import UserDetail from './pages/UserDetail';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/posts/:id",
     element: <PostDetail />,
+  },
+  {
+    path: "/user/:id",
+    element: <UserDetail />,
   }
 ]);
 
